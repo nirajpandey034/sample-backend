@@ -27,3 +27,7 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
   console.log(`listening on port ${PORT}`);
 });
+
+
+
+// write, npm run swagger-autogen to run the application in local
