@@ -41,7 +41,7 @@ router.get('/posts-with-comments', function (req, res) {
   getPosts();
 });
 router.post('/create-post', function (req, res) {
-  return res.status(200).json({ info: 'Post Created', data: req.body });
+  return res.status(200).json({ info: 'Post Created', data: req.body, status: true });
 });
 
 router.all('*', (req, res) => {

@@ -13,18 +13,26 @@ router.get('/user-list', function (req, res) {
 });
 
 router.post('/login-success', function (req, res) {
-  return res.status(200).json({ info: 'Login Successful', data: req.body });
+  return res
+    .status(200)
+    .json({ info: 'Login Successful', data: req.body, status: true });
 });
 
 router.post('/login-failure', function (req, res) {
-  return res.status(200).json({ info: 'Login Failed', data: req.body });
+  return res
+    .status(200)
+    .json({ info: 'Login Failed', data: req.body, status: false });
 });
 
 router.post('/user-registration-success', function (req, res) {
-  return res.status(200).json({ info: 'User Created', data: req.body });
+  return res
+    .status(200)
+    .json({ info: 'User Created', data: req.body, status: true });
 });
 router.post('/user-registration-failure', function (req, res) {
-  return res.status(200).json({ info: 'user Creation Failed', data: req.body });
+  return res
+    .status(200)
+    .json({ info: 'user Creation Failed', data: req.body, status: false });
 });
 
 router.all('*', (req, res) => {
