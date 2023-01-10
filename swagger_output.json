@@ -1,14 +1,14 @@
 {
   "swagger": "2.0",
   "info": {
-    "version": "1.0.0",
-    "title": "REST API",
-    "description": ""
+    "title": "Sample Backend",
+    "description": "Sample backend for beginner frontend developers (Web/Mobile)",
+    "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "fair-tick-pleat.cyclic.app",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/": {
